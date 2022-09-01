@@ -8,7 +8,7 @@ import { AiFillVideoCamera } from 'react-icons/ai';
 const Hero = () => {
     return (
         <React.Fragment>
-            <div class="hero bg-base-200">
+            <div class="hero">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <img src="/assets/images/hero-image.png" className="md:max-w-3xl sm:max-w-sm" />
                     <div>
@@ -19,11 +19,8 @@ const Hero = () => {
                                 <li class="content__container__list__item items-baseline">Meets <SiHandshake className="text-4xl text-sky-800 ml-1" /></li>
                                 <li class="content__container__list__item items-end">Live <AiFillVideoCamera className="text-5xl text-sky-800 ml-1" /></li>
                                 <li class="content__container__list__item items-baseline">Groups <HiUserGroup className="text-4xl text-sky-800 ml-1" /></li>
-
                             </ul>
                         </div>
-
-
                         <h2 className="text-3xl text-center md:text-start mb-6">Easy community access with more options!</h2>
                         <button className="btn btn-primary hidden md:block">Join Now</button>
                         <div className="md:hidden text-center">
