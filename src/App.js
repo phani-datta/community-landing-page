@@ -1,14 +1,15 @@
 import React from "react";
+import Drawer from "./components/Drawer";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 
 function App() {
   return (
-    <React.Fragment>
+    <Drawer>
       <Nav />
       <Hero />
       <div></div>
-    </React.Fragment>
+    </Drawer>
   );
 }
 
