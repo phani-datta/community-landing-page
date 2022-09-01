@@ -11,10 +11,8 @@ const ProgressScroll = () => {
     };
 
     return (
-        <div className="sticky top-16">
-            <div className="bg-transparent h-1">
-                <div className="bg-blue-300 h-1 w-0" id="progressBar"></div>
-            </div>
+        <div className="sticky bg-transparent top-16 z-50">
+            <div className="bg-blue-300 h-1 w-0" id="progressBar"></div>
         </div>);
 };
 
