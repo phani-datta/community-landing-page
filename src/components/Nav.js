@@ -1,13 +1,14 @@
 import React from "react";
 import { BsChatTextFill } from 'react-icons/bs';
 import { FaBell } from 'react-icons/fa';
+import { MdMoreHoriz } from 'react-icons/md';
 import ProgressScroll from "./ProgressScroll";
 
 const Nav = () => {
     return (
         <React.Fragment>
             <div className="navbar sticky top-0 bg-base-100 shadow-lg z-50">
-                <div className="navbar-start">
+                <div className="navbar-start lg:ml-6">
                     <div className="dropdown">
                         <label tabIndex="0" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -48,7 +49,7 @@ const Nav = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end lg:mr-6">
                     <div className="indicator cursor-pointer tooltip tooltip-bottom" data-tip="3 notifications">
                         <span className="indicator-item badge badge-primary">3</span>
                         <FaBell className="text-3xl" />
@@ -57,8 +58,9 @@ const Nav = () => {
                         <span className="indicator-item badge badge-primary">9</span>
                         <BsChatTextFill className="text-3xl" />
                     </div>
-                    <label htmlFor="my-drawer" className="avatar cursor-pointer tooltip tooltip-bottom ml-4" data-tip="More">
-                        <div className="w-12 rounded-full">
+                    <label htmlFor="my-drawer" className="avatar indicator cursor-pointer ml-4 tooltip tooltip-bottom" data-tip="Account">
+                        <span class="indicator-item indicator-bottom badge px-1"><MdMoreHoriz /></span>
+                        <div className="w-10 rounded-full">
                             <img src="/assets/images/profile.png" />
                         </div>
                     </label>
