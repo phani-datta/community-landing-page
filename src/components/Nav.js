@@ -2,6 +2,8 @@ import React from "react";
 import { BsChatTextFill } from 'react-icons/bs';
 import { FaBell } from 'react-icons/fa';
 import { MdMoreHoriz } from 'react-icons/md';
+import { IoMdArrowDropdown } from 'react-icons/io';
+import GroupsDropdown from "./groupsDropdown";
 
 const Nav = () => {
     return (
@@ -37,7 +39,12 @@ const Nav = () => {
                         <li><a href="#home" className="active">Home</a></li>
                         <li><a href="#about">About Drixico</a></li>
                         <li><a href="#aboutOwner">About Owner</a></li>
-                        <li><a href="#groups">Groups</a></li>
+                        <div className="dropdown">
+                            <li tabIndex="0"><a href="#groups">Groups <IoMdArrowDropdown /></a></li>
+                            <div tabindex="0" class="dropdown-content card p-2 bg-white shadow">
+                                <GroupsDropdown />
+                            </div>
+                        </div>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
