@@ -33,19 +33,13 @@ const Nav = () => {
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal p-0">
-                        <li><a>Item 1</a></li>
-                        <li tabIndex="0">
-                            <a>
-                                Parent
-                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                            </a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                    <ul className="menu menu-horizontal p-0 gap-2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Drixico</a></li>
+                        <li><a href="#aboutOwner">About Owner</a></li>
+                        <li><a href="#groups">Groups</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end lg:mr-6">
