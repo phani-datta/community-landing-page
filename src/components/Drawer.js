@@ -2,7 +2,7 @@ const Drawer = ({ children }) => {
     return (
         <div className="drawer drawer-end">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content">
+            <div className="drawer-content scroll-smooth">
                 {/* <!-- Page content here --> */}
                 {children}
             </div>

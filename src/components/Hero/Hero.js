@@ -9,7 +9,7 @@ import HeroStats from "./HeroStats";
 const Hero = () => {
     return (
         <React.Fragment>
-            <div className="hero bg-base-200">
+            <section className="hero bg-base-200 h-fit" id="home">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src="/assets/images/hero-image.png" className="md:max-w-3xl sm:max-w-sm" />
                     <div>
@@ -31,7 +31,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </React.Fragment>
     );
 };
