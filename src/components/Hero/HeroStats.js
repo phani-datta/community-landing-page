@@ -25,7 +25,7 @@ const HeroStats = () => {
 
                 <div className="stat">
                     <div className="stat-figure text-secondary">
-                        <Emoji symbol="🎥" className="text-3xl" />
+                        <Emoji symbol="🎉" className="text-3xl" />
                     </div>
                     <div className="stat-title">Events</div>
                     <div className="stat-value">25</div>
