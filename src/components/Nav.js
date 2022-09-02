@@ -2,7 +2,6 @@ import React from "react";
 import { BsChatTextFill } from 'react-icons/bs';
 import { FaBell } from 'react-icons/fa';
 import { MdMoreHoriz } from 'react-icons/md';
-import ProgressScroll from "./ProgressScroll";
 
 const Nav = () => {
     return (
@@ -66,7 +65,6 @@ const Nav = () => {
                     </label>
                 </div>
             </div>
-            <ProgressScroll />
         </React.Fragment>
     );
 };
