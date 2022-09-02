@@ -34,7 +34,7 @@ const Nav = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0 gap-2">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home" className="active">Home</a></li>
                         <li><a href="#about">About Drixico</a></li>
                         <li><a href="#aboutOwner">About Owner</a></li>
                         <li><a href="#groups">Groups</a></li>
