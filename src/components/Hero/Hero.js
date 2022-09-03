@@ -11,7 +11,7 @@ const Hero = () => {
         <React.Fragment>
             <section className="hero bg-base-200 h-fit" id="home">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img src="/assets/images/hero-image.png" className="md:max-w-3xl sm:max-w-sm" />
+                    <img src="./assets/images/hero-image.png" className="md:max-w-3xl sm:max-w-sm" />
                     <div>
                         <div className="content__container">
                             <h1 className="content__container__text text-5xl font-bold">Drixico</h1>
