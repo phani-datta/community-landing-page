@@ -1,6 +1,9 @@
+import GroupsDropdown from "./groupsDropdown";
+import { IoMdArrowDropdown } from 'react-icons/io';
+
 const Drawer = ({ children }) => {
     return (
-        <div className="drawer drawer-end">
+        <div className="drawer lg:drawer-end">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content scroll-smooth">
                 {/* <!-- Page content here --> */}
@@ -12,6 +15,13 @@ const Drawer = ({ children }) => {
                     {/* <!-- Sidebar content here --> */}
                     <li><a>Sidebar Item 1</a></li>
                     <li><a>Sidebar Item 2</a></li>
+                    <li className="lg:hidden"><a href="#home" className="active">Home</a></li>
+                    <li className="lg:hidden"><a href="#about">About Drixico</a></li>
+                    <li className="lg:hidden"><a href="#aboutOwner">About Owner</a></li>
+                    <li className="lg:hidden"><a href="#groups">Groups</a></li>
+                    <li className="lg:hidden"><a href="#events">Events</a></li>
+                    <li className="lg:hidden"><a href="#testimonials">Testimonials</a></li>
+                    <li className="lg:hidden"><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
         </div>
