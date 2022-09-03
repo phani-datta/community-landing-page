@@ -47,7 +47,9 @@
 }
 
 @media (max-width: 480px) {
-    line-height: 52px;
+    .content__container__list__item{
+        line-height: 51.5px;
+    }
 }
 
 @-webkit-keyframes opacity {
