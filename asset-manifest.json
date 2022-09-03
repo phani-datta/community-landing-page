@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/community-landing-page/static/css/main.f6f04d56.css",
+    "main.js": "/community-landing-page/static/js/main.9713a41c.js",
+    "index.html": "/community-landing-page/index.html",
+    "main.f6f04d56.css.map": "/community-landing-page/static/css/main.f6f04d56.css.map",
+    "main.9713a41c.js.map": "/community-landing-page/static/js/main.9713a41c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6f04d56.css",
+    "static/js/main.9713a41c.js"
+  ]
+}
