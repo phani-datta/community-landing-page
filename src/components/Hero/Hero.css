@@ -50,6 +50,9 @@
     .content__container__list__item{
         line-height: 51.5px;
     }
+    .content__container{
+        height: 58px;
+    }
 }
 
 @-webkit-keyframes opacity {
