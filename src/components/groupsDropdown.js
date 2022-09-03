@@ -6,7 +6,7 @@ const GroupsDropdown = () => {
     };
 
     return (
-        <div class="grid grid-rows-6 grid-flow-col gap-x-6 gap-y-2 p-3">
+        <div className="grid grid-rows-6 grid-flow-col gap-x-6 gap-y-2 p-3">
             {groups.sort().map(item => {
                 return (
                     <div className="w-24

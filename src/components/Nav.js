@@ -41,7 +41,7 @@ const Nav = () => {
                         <li><a href="#aboutOwner">About Owner</a></li>
                         <div className="dropdown">
                             <li tabIndex="0"><a href="#groups">Groups <IoMdArrowDropdown /></a></li>
-                            <div tabindex="0" class="dropdown-content card p-2 bg-white shadow">
+                            <div tabIndex="0" className="dropdown-content card p-2 bg-white shadow">
                                 <GroupsDropdown />
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const Nav = () => {
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end lg:mr-6">
+                <div className="navbar-end mr-2 lg:mr-6">
                     <div className="indicator cursor-pointer tooltip tooltip-bottom" data-tip="3 notifications">
                         <span className="indicator-item badge badge-primary">3</span>
                         <FaBell className="text-3xl" />
@@ -59,7 +59,7 @@ const Nav = () => {
                         <BsChatTextFill className="text-3xl" />
                     </div>
                     <label htmlFor="my-drawer" className="avatar indicator cursor-pointer ml-4 tooltip tooltip-bottom" data-tip="Account">
-                        <span class="indicator-item indicator-bottom badge px-1"><MdMoreHoriz /></span>
+                        <span className="indicator-item indicator-bottom badge px-1"><MdMoreHoriz /></span>
                         <div className="w-10 rounded-full">
                             <img src="/assets/images/profile.png" />
                         </div>

@@ -1,6 +1,3 @@
-import GroupsDropdown from "./groupsDropdown";
-import { IoMdArrowDropdown } from 'react-icons/io';
-
 const Drawer = ({ children }) => {
     return (
         <div className="drawer lg:drawer-end">

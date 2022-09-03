@@ -46,6 +46,10 @@
     font-weight: 400;
 }
 
+@media (max-width: 480px) {
+    line-height: 52px;
+}
+
 @-webkit-keyframes opacity {
 
     0%,
