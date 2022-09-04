@@ -1,3 +1,5 @@
+import DrawerCredits from "./DrawerCredits";
+
 const Drawer = ({ children }) => {
     return (
         <div className="drawer lg:drawer-end">
@@ -19,6 +21,7 @@ const Drawer = ({ children }) => {
                     <li className="lg:hidden"><a href="#events">Events</a></li>
                     <li className="lg:hidden"><a href="#testimonials">Testimonials</a></li>
                     <li className="lg:hidden"><a href="#faq">FAQ</a></li>
+                    <DrawerCredits />
                 </ul>
             </div>
         </div>
