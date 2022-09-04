@@ -1,0 +1,31 @@
+.about-icon-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7ebfe;
+    width: 50px;
+    height: 50px;
+    margin-top: 6px;
+    border-radius: 8px;
+    float: right;
+}
+
+.about-icon-heading {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.about-icon-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5f7d95;
+    width: 410px;
+}
+
+@media (max-width: 480px) {
+    .about-icon-text {
+        width: fit-content;
+    }
+}
