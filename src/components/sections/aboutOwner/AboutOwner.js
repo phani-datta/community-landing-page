@@ -19,7 +19,7 @@ const AboutOwner = () => {
             <div className="block md:grid grid-cols-3 gap-4 w-sm lg:w-[60rem] mx-auto py-20">
                 <div className='flex md:block justify-center'>
                     <div className="avatar">
-                        <div className="w-64 rounded-full">
+                        <div className="w-72 rounded-full shadow-2xl">
                             <img src="/assets/images/owner.png" alt="Phani Datta Reddy" />
                         </div>
                     </div>
