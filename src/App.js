@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/sections/about/About";
 import Footer from "./components/Footer";
 import AboutOwner from "./components/sections/aboutOwner/AboutOwner";
+import Groups from "./components/sections/groups/Groups";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Hero />
       <About />
       <AboutOwner />
-      <div></div>
+      <Groups />
       <Footer />
     </Drawer>
   );
