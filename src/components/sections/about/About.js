@@ -7,7 +7,7 @@ import './index.css';
 const About = () => {
     return (
         <section id="about">
-            <div className="flex w-sm lg:w-[65rem] mx-auto justify-between items-center my-20">
+            <div className="flex w-sm lg:w-[65rem] mx-auto justify-between items-center py-20">
                 <div>
                     <div className="flex items-center gap-1 justify-center md:justify-start">
                         <img src="/assets/images/logo.png" className="h-9" alt="Logo" />
