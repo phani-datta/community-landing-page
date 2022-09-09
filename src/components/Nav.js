@@ -4,8 +4,15 @@ import { FaBell } from 'react-icons/fa';
 import { MdMoreHoriz } from 'react-icons/md';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import GroupsDropdown from "./groupsDropdown";
+import { useState } from "react";
 
 const Nav = () => {
+    const [activeNavButton, setActiveNavButton] = useState('Home');
+
+    const handleNavButtons = (event) => {
+        setActiveNavButton(event.target.name);
+    };
+
     return (
         <React.Fragment>
             <div className="navbar sticky top-0 bg-base-100 shadow-lg z-50">
@@ -36,17 +43,17 @@ const Nav = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0 gap-2">
-                        <li><a href="#home" className="active">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#aboutOwner">About Owner</a></li>
-                        <div className="dropdown">
-                            <li tabIndex="0"><a href="#groups">Groups <IoMdArrowDropdown /></a></li>
+                        <li><a onClick={handleNavButtons} href="#home" name="Home" className={activeNavButton === "Home" ? "active" : ""}>Home</a></li>
+                        <li><a onClick={handleNavButtons} href="#about" name="About" className={activeNavButton === "About" ? "active" : ""} >About</a></li>
+                        <li><a onClick={handleNavButtons} href="#aboutOwner" name="About Owner" className={activeNavButton === "About Owner" ? "active" : ""}>About Owner</a></li>
+                        <div className="dropdown dropdown-hover">
+                            <label tabIndex="0"><li><a href="#groups" name="Groups" onClick={handleNavButtons} className={activeNavButton === "Groups" ? "active" : ""}>Groups <IoMdArrowDropdown /></a></li></label>
                             <div tabIndex="0" className="dropdown-content card p-2 bg-white shadow">
                                 <GroupsDropdown />
                             </div>
                         </div>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#testimonials" name="Testimonials" onClick={handleNavButtons} className={activeNavButton === "Testimonials" ? "active" : ""}>Testimonials</a></li>
+                        <li><a href="#faq" onClick={handleNavButtons} name="FAQ" className={activeNavButton === "FAQ" ? "active" : ""}>FAQ</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end mr-2 lg:mr-6">
